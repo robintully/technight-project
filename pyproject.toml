@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "toy-graph"
+version = "0.1.0"
+description = ""
+authors = ["Robin Tully <mr.robintully@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+uvicorn = "^0.6.1"
+huey = "^1.11"
+redis = "^3.2"
+responder = "^1.3"
+pandas-datareader = "^0.7.0"
+fbprophet = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

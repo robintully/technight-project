@@ -1,0 +1,16 @@
+<h1>{{ stock_name }}</h1>
+
+{% if stock_values != False %}
+<table style="width:100%">
+  <tr>
+    <th>Date</th>
+    <th>Price</th> 
+  </tr>
+  {% for stock in stock_values %}
+  <tr>
+    <td>{{ stock[0] }}</td>
+    <td>{{ stock[1] }}</td> 
+  </tr>
+{% endfor %}
+</table>
+{% endif %}
